@@ -53,7 +53,7 @@ export default function Layout({ children }: LayoutProps) {
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-8 h-8 rounded-lg bg-white border border-[#E2E8F0] p-1 flex items-center justify-center shadow-xs transition-transform duration-300 group-hover:scale-105">
               <img
-                src="/assets/logo utama logogram.png"
+                src="/assets/logo.png"
                 alt="By Gewa Logo"
                 className="w-full h-full object-contain"
               />
@@ -137,7 +137,7 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="flex items-center gap-2.5">
                   <div className="w-7 h-7 rounded-lg bg-[#FDF2F7] border border-[#FCE7F3] p-1 flex items-center justify-center">
                     <img
-                      src="/assets/logo utama logogram.png"
+                      src="/assets/logo.png"
                       alt="By Gewa"
                       className="w-full h-full object-contain"
                     />
@@ -234,7 +234,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/assets/logo utama logogram.png"
+                src="/assets/logo.png"
                 alt="By Gewa Logo"
                 className="w-8 h-8 object-contain filter invert brightness-200"
               />

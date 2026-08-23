@@ -46,7 +46,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         <div className="p-6 border-b border-[#1E293B]">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/assets/logo utama logogram.png"
+              src="/assets/logo.png"
               alt="By Gewa Logo"
               className="w-7 h-7 object-contain filter invert brightness-200"
             />
@@ -124,7 +124,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               <div className="flex items-center justify-between pb-4 border-b border-[#1E293B] mb-4">
                 <Link to="/" className="flex items-center gap-2.5">
                   <img
-                    src="/assets/logo utama logogram.png"
+                    src="/assets/logo.png"
                     alt="By Gewa Logo"
                     className="w-6 h-6 object-contain filter invert brightness-200"
                   />
