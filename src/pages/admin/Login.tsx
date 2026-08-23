@@ -25,7 +25,7 @@ export default function AdminLogin() {
         {/* Brand */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center gap-2.5 mb-3">
-            <img src="/assets/logo utama logogram.png" alt="By Gewa" className="w-8 h-8 object-contain" />
+            <img src="/assets/logo.png" alt="By Gewa" className="w-8 h-8 object-contain" />
             <span className="text-2xl font-bold font-display text-[#0F172A]">By Gewa</span>
           </Link>
           <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#D94883] block">

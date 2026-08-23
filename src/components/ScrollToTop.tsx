@@ -12,7 +12,7 @@ export function RouteSync() {
     document.querySelectorAll("main").forEach((el) => {
       el.scrollTop = 0
     })
-    document.title = pathname.startsWith("/admin") ? "CMS admin" : "ByGewa - Artificial"
+    document.title = pathname.startsWith("/admin") ? "CMS admin" : "ByGewa - Paint Your Moment"
   }, [pathname, search])
 
   return null

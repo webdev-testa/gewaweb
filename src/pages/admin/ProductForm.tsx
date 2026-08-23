@@ -24,7 +24,7 @@ export default function ProductForm() {
   const [basePrice, setBasePrice] = useState(150000)
   const [rentPricePerDay, setRentPricePerDay] = useState(100000)
   const [lateFeePerDay, setLateFeePerDay] = useState(25000)
-  const [coverPhoto, setCoverPhoto] = useState("/assets/Aset Foto Jenis Lini Produk/Bouquet By Gewa.png")
+  const [coverPhoto, setCoverPhoto] = useState("/assets/lines/bouquet.png")
   const [description, setDescription] = useState("")
   const [active, setActive] = useState(true)
   const [portfolio, setPortfolio] = useState(true)
@@ -235,7 +235,7 @@ export default function ProductForm() {
                   onError={(e) => {
                     ;(e.target as HTMLElement).setAttribute(
                       "src",
-                      "/assets/Aset Foto Jenis Lini Produk/Bouquet By Gewa.png"
+                      "/assets/lines/bouquet.png"
                     )
                   }}
                 />

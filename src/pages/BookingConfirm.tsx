@@ -35,7 +35,7 @@ export default function BookingConfirm() {
     totalAmount = 165000,
     dpAmount = 50000,
     deliveryMethod = "Self Pick-up Studio (Jl. Permata Jingga IV No.12, Malang)",
-    productImage = "/assets/Aset Foto Jenis Lini Produk/Bouquet By Gewa.png",
+    productImage = "/assets/lines/bouquet.png",
   } = state || {}
 
   const isRent = orderType === "rent"

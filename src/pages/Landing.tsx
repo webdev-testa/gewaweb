@@ -118,7 +118,7 @@ export default function Landing() {
             <div className="relative mx-auto max-w-md rounded-3xl overflow-hidden bg-[#F8FAFC] p-4 shadow-[0_16px_40px_-12px_rgba(15,23,42,0.08)] border border-[#E2E8F0]">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-white flex items-center justify-center p-2 relative">
                 <img
-                  src="/assets/Banner Cover/Header Gform (1).png"
+                  src="/assets/banner-cover.png"
                   alt="By Gewa Floral Atelier Banner"
                   className="w-full h-full object-cover rounded-xl"
                 />
