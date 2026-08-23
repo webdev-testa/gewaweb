@@ -1,0 +1,11 @@
+{
+  "title": "ByGewa - Artificial",
+  "description": "By Gewa — Bespoke Painted Artificial Flowers & Floral Rentals. Rangkaian bunga lukis abadi untuk wisuda, pernikahan, hampers, dan dekorasi acara.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

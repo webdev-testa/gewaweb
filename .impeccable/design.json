@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-15T11:59:50.000Z",
+  "title": "Design System: By Gewa Artisan Floral Atelier",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Terracotta Rose",
+        "canonical": "#c9552a",
+        "tonalRamp": ["#421708", "#6a2610", "#943715", "#ad441e", "#c9552a", "#df7852", "#f0a68a", "#faede8"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Botanical Ink",
+        "canonical": "#1a1715",
+        "tonalRamp": ["#0d0c0a", "#1a1715", "#332e2b", "#4a4540", "#7a7068", "#a89f96", "#e8e2d9", "#faf9f5"]
+      },
+      "pastel-rose": {
+        "role": "secondary",
+        "displayName": "Rose Blush (Bouquets)",
+        "canonical": "#ffccdf",
+        "tonalRamp": ["#661f36", "#992f51", "#cc4772", "#e87a9e", "#ff9ec0", "#ffccdf", "#ffe5ef", "#fff7fa"]
+      },
+      "pastel-tosca": {
+        "role": "secondary",
+        "displayName": "Artisan Tosca (Vases)",
+        "canonical": "#b4c8cb",
+        "tonalRamp": ["#16373b", "#275459", "#3e7980", "#5db8a6", "#87c2c7", "#b4c8cb", "#d8e7e9", "#f1f7f8"]
+      },
+      "pastel-peach": {
+        "role": "secondary",
+        "displayName": "Warm Peach (Signatures)",
+        "canonical": "#ffd8be",
+        "tonalRamp": ["#54280b", "#874113", "#bd5f20", "#f59e6b", "#ffb88e", "#ffd8be", "#ffebdc", "#fff8f3"]
+      },
+      "pastel-lavender": {
+        "role": "secondary",
+        "displayName": "Lavender Lilac (Hand Bouquets)",
+        "canonical": "#e2d5f8",
+        "tonalRamp": ["#361d5c", "#552f8f", "#7c4cc7", "#a58ad9", "#c6b3ec", "#e2d5f8", "#f0eafb", "#f9f6fe"]
+      },
+      "pastel-ochre": {
+        "role": "secondary",
+        "displayName": "Honey Ochre (Table Decor)",
+        "canonical": "#fce3a7",
+        "tonalRamp": ["#4a3707", "#73570d", "#a37c15", "#d4a24c", "#e9c176", "#fce3a7", "#fef1d3", "#fffbf2"]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Linen Canvas",
+        "canonical": "#faf9f5",
+        "tonalRamp": ["#1a1715", "#332e2b", "#7a7068", "#c4bcb2", "#e8e2d9", "#f5f0eb", "#faf9f5", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display-xl": {
+        "displayName": "Display XL",
+        "purpose": "Hero headlines and main collection introductions."
+      },
+      "display-lg": {
+        "displayName": "Display LG",
+        "purpose": "Section headings and editorial feature titles."
+      },
+      "body-md": {
+        "displayName": "Body MD",
+        "purpose": "Main content copy, product descriptions, and narrative."
+      },
+      "label-caps": {
+        "displayName": "Label Caps",
+        "purpose": "Uppercase tracking badges, category markers, and steps."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 1px 3px 0 rgba(26, 23, 21, 0.04)",
+        "purpose": "Subtle grounded boundary for resting cards."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 12px 32px -8px rgba(26, 23, 21, 0.08)",
+        "purpose": "Smooth floating elevation for hovered product tiles."
+      },
+      {
+        "name": "modal",
+        "value": "0 20px 48px -12px rgba(26, 23, 21, 0.16)",
+        "purpose": "Elevated backdrop shadow for overlays and floating CTA."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-artisan",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Smooth fluid transitions for card hovers and page transitions."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main call-to-action button used across storefront and booking flows.",
+      "html": "<button class=\"ds-btn-primary\">Lihat Katalog Bunga</button>",
+      "css": ".ds-btn-primary { background-color: #c9552a; color: #ffffff; padding: 12px 28px; border-radius: 9999px; font-family: 'Outfit', sans-serif; font-size: 0.875rem; font-weight: 500; border: none; cursor: pointer; transition: all 0.2s ease; } .ds-btn-primary:hover { background-color: #ad441e; transform: translateY(-1px); } .ds-btn-primary:active { transform: scale(0.98); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline secondary action button for alternative paths.",
+      "html": "<button class=\"ds-btn-secondary\">Chat WhatsApp</button>",
+      "css": ".ds-btn-secondary { background-color: transparent; color: #1a1715; padding: 12px 24px; border-radius: 9999px; font-family: 'Outfit', sans-serif; font-size: 0.875rem; font-weight: 500; border: 1px solid #1a1715; cursor: pointer; transition: all 0.2s ease; } .ds-btn-secondary:hover { background-color: #ffffff; border-color: #c9552a; color: #c9552a; }"
+    },
+    {
+      "name": "Category Filter Chip",
+      "kind": "chip",
+      "refersTo": "badge-category",
+      "description": "Pill-shaped category selector tab.",
+      "html": "<button class=\"ds-chip-category active\">Hand Bouquet (Buy/Rent)</button>",
+      "css": ".ds-chip-category { background-color: #f5f0eb; color: #4a4540; padding: 8px 18px; border-radius: 9999px; font-family: 'Outfit', sans-serif; font-size: 0.8125rem; font-weight: 500; border: 1px solid transparent; cursor: pointer; transition: all 0.2s ease; } .ds-chip-category.active { background-color: #faede8; border-color: #c9552a; color: #c9552a; font-weight: 600; }"
+    },
+    {
+      "name": "Booking Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-status",
+      "description": "High-visibility status badge for booking and order pipelines.",
+      "html": "<span class=\"ds-badge-status status-dp\">DP Paid</span>",
+      "css": ".ds-badge-status { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 9999px; font-family: 'Outfit', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em; } .ds-badge-status.status-dp { background-color: #e0f2fe; color: #0369a1; } .ds-badge-status.status-pending { background-color: #fef3c7; color: #92400e; } .ds-badge-status.status-paid { background-color: #d1fae5; color: #065f46; }"
+    },
+    {
+      "name": "Product Floral Card",
+      "kind": "card",
+      "refersTo": "card-product",
+      "description": "Portrait floral catalog card with price and rental indicator.",
+      "html": "<div class=\"ds-card-product\"><div class=\"ds-card-img-wrap\"><div class=\"ds-card-badge\">Rent / Buy</div></div><div class=\"ds-card-body\"><span class=\"ds-card-category\">HAND BOUQUET</span><h3 class=\"ds-card-title\">Largo Pastel Lavender</h3><p class=\"ds-card-price\">Rp 180.000 <span class=\"ds-price-sub\">/ hari</span></p></div></div>",
+      "css": ".ds-card-product { background-color: #ffffff; border-radius: 16px; border: 1px solid #e8e2d9; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); max-width: 280px; } .ds-card-product:hover { transform: translateY(-4px); box-shadow: 0 12px 32px -8px rgba(26, 23, 21, 0.08); border-color: #c9552a; } .ds-card-img-wrap { position: relative; width: 100%; aspect-ratio: 4/5; background-color: #f5f0eb; } .ds-card-badge { position: absolute; top: 12px; right: 12px; background: rgba(255,255,255,0.9); backdrop-filter: blur(4px); padding: 4px 10px; border-radius: 9999px; font-size: 0.6875rem; font-weight: 600; color: #1a1715; } .ds-card-body { padding: 16px; } .ds-card-category { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.15em; color: #c9552a; } .ds-card-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.125rem; font-weight: 600; color: #1a1715; margin: 4px 0 8px 0; } .ds-card-price { font-family: 'Fraunces', Georgia, serif; font-size: 1rem; font-weight: 600; color: #1a1715; } .ds-price-sub { font-family: 'Outfit', sans-serif; font-size: 0.75rem; font-weight: 400; color: #7a7068; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Artisan Floral Atelier",
+    "overview": "The visual identity of By Gewa blends the quiet editorial warmth of a boutique monograph (Claude), the joyful pastel color-play of handcrafted art cards (Clay), and the clear, high-utility marketplace & merchant CMS mechanics (Airbnb & Shopify). The experience opens on a warm linen/cream ground (#FAF9F5), anchored by expressive serif display typography (Fraunces) for titles and artisan prices, paired with a friendly, highly legible modern grotesque (Outfit) for body copy and rental metadata.",
+    "keyCharacteristics": [
+      "Warm Linen Canvas: #FAF9F5 base ground and #F5F0EB subtle panels replace cold stark whites.",
+      "Artisan Color Voltage: Warm Terracotta Rose (#C9552A) carries primary CTAs and key brand moments.",
+      "Categorical Pastel Washes: Dedicated pastel accents (Pink #FFCCDF, Tosca #B4C8CB, Peach #FFD8BE, Lavender #E2D5F8, Ochre #FCE3A7) tint category badges, filters, and cards.",
+      "Serif Display + Modern Sans Hierarchy: Fraunces for expressive artisan headings; Outfit for clear, comfortable reading and admin data tables.",
+      "Full-Pill & Soft-Card Geometry: 16px softly rounded cards with full-pill (9999px) badges and action buttons.",
+      "Commerce & CMS Clarity: High-contrast booking statuses (Pending, DP Paid, Paid, Returned), inline live pricing controls, and dedicated WhatsApp handshakes."
+    ],
+    "rules": [
+      {
+        "name": "The Floral Accent Dominance Rule",
+        "body": "The Terracotta primary accent carries key actions and never covers more than 15% of any viewport. Category pastel tints serve strictly as soft surface backgrounds or tag fills to keep the photography as the hero.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Ground Rule",
+        "body": "Never use pure #000000 for text or pure #FFFFFF for full-page canvas. Contrast is achieved through deep ink (#1A1715) against warm linen (#FAF9F5).",
+        "section": "colors"
+      },
+      {
+        "name": "The Price-Display Rule",
+        "body": "All prices are formatted in IDR (Rp 150.000) and styled with Fraunces semi-bold display typography, celebrating the value and handcrafted nature of the arrangement.",
+        "section": "typography"
+      },
+      {
+        "name": "The Strict Tracking Rule",
+        "body": "Uppercase micro-labels must always use tracking 0.15em to 0.25em to maintain airy editorial legibility.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tonal Layering Rule",
+        "body": "Surfaces achieve hierarchy by resting white cards (#FFFFFF) upon warm linen canvas (#FAF9F5), bordered by clean hairline strokes (#E8E2D9), rather than dark heavy drop shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do celebrate the handcrafted, artisan quality of painted flowers with generous whitespace and high-resolution photography.",
+      "Do use category-specific pastel washes (#FFCCDF, #B4C8CB, #FFD8BE, #E2D5F8, #FCE3A7) to create joyful visual variety across product lines.",
+      "Do style prices in Fraunces serif to evoke the bespoke boutique atelier experience.",
+      "Do provide clear, friction-free status pills and inline editing in the Admin CMS to allow effortless price and content updates.",
+      "Do route finalized booking and inquiry summaries into pre-formatted, polite Indonesian WhatsApp messages."
+    ],
+    "donts": [
+      "Don't use cold clinical pure black (#000000) or pure gray backgrounds; always tint with warm linen (#FAF9F5).",
+      "Don't clutter product cards with heavy drop shadows or flashy gradient borders.",
+      "Don't hide rental vs buy terms; always clearly display whether an item is for purchase (Bouquet/Vase) or available for rental (Hand Bouquet/Table Decor) with DP and late fee terms.",
+      "Don't use generic stock iconography; maintain delicate, refined SVG line art suited to floristry."
+    ]
+  }
+}

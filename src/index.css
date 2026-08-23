@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #FDFCFB;
+  --color-foreground: #0F172A;
+  --color-card: #FFFFFF;
+  --color-muted: #F8FAFC;
+  --color-primary: #D94883;
+  --color-primary-hover: #C2366F;
+  --color-primary-soft: #FDF2F7;
+  --color-primary-foreground: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-border-soft: #F1F5F9;
+  --color-muted-foreground: #64748B;
+
+  --color-brand-pink: #FFCCDF;
+  --color-brand-pink-light: #FFEFF5;
+  --color-brand-tosca: #B4C8CB;
+  --color-brand-tosca-light: #E7EDEE;
+  --color-brand-teal: #2E8B94;
+
+  --color-pastel-rose: #FFCCDF;
+  --color-pastel-tosca: #B4C8CB;
+  --color-pastel-sage: #D1E7DD;
+  --color-pastel-lavender: #E9D5FF;
+  --color-pastel-peach: #FFE4E6;
+  --color-pastel-azure: #DBEAFE;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #FDFCFB;
+  color: #0F172A;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Fraunces', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D94883;
+}
+
+/* Focus rings for accessibility */
+*:focus-visible {
+  outline: 2px solid #D94883;
+  outline-offset: 2px;
+}
+
+/* Accessible reduced motion support: suppress large layout shifts while keeping soft opacity feedback */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .hover-lift:hover {
+    transform: none !important;
+  }
+}
+
+/* Artisan micro-motion and tactile physics */
+.transition-artisan {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.08);
+}
+
+.active-push:active {
+  transform: scale(0.98);
+}
